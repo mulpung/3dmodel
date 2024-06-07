@@ -34,7 +34,7 @@
             scene.add(directionalLight);
 
             // OBJLoader 인스턴스 생성
-            const objLoader = new OBJLoader();
+            const objLoader = new THREE.OBJLoader();
             objLoader.load('model.obj', function (object) {
                 model = object;
                 scene.add(model);
