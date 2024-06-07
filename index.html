@@ -33,6 +33,7 @@
             directionalLight.position.set(1, 1, 1).normalize();
             scene.add(directionalLight);
 
+            // OBJLoader 인스턴스 생성
             const objLoader = new OBJLoader();
             objLoader.load('model.obj', function (object) {
                 model = object;
